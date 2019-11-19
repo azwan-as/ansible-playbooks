@@ -4,7 +4,7 @@
     tasks:
     - name: IIS service installed
       win_feature:
-        name: Web-server
+        name: Web-Server
         state: present
     - name: IIS service started
       win-service:
