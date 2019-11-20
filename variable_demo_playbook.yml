@@ -6,4 +6,6 @@
     win_user:
       name: "{{ usr }}"
       state: present
-    loop: "{{Variables/userlist.yml}}"
+    loop:
+      - user1
+      - user2
