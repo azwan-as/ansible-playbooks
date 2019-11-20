@@ -2,3 +2,4 @@
 users: 
   - name: aasatar1
   - name: xoaasatar1
+    groups: Administrators
