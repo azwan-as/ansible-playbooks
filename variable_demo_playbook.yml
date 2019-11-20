@@ -4,8 +4,8 @@
   vars_files:
   - Variables/userlist.yml
   tasks:
-  - name: Creating user {{ usr }}
+  - name: Creating user
     win_user:
-      name: "{{ usr }}"
+      name: "{{item.name}}"
       state: present
-    loop: "{{Variables/userlist.yml}}"
+    with_item: "{{users}}"
