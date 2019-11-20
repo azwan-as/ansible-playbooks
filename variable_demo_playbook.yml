@@ -8,4 +8,4 @@
     win_user:
       name: "{{item.name}}"
       state: present
-    with_item: "{{users}}"
+    with_items: "{{users}}"
