@@ -21,7 +21,7 @@
       win_file:
         path: C:\custom_share
         state: directory
-    - name: Enabling \custom_share
+    - name: Enabling custom_share
       win_share:
         description: This a custom share
         path: c:\custom_share
