@@ -2,9 +2,9 @@
 - name: Creating users
   hosts: all
   vars_files: 
-  - Variables\userlist.yml
+  - Variables/userlist.yml
   tasks:
   - name: Creating user {{ usr }}
     win_user:
-      name: temp_{{ usr }}
+      name: {{ usr }}
       state: present
